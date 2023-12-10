@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .App {
+        @apply flex items-center justify-center min-h-screen bg-gray-50;
+    }
+
+    .btn {
+        @apply flex gap-2 items-center justify-center py-2 px-4 font-semibold shadow-md rounded-lg;
+    }
+
+    .btn.btn-light {
+        @apply bg-white text-gray-500;
+    }
+
+    .btn.btn-success {
+        @apply text-white bg-green-600 shadow-green-400/10
+    }
+}
